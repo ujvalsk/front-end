@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+
+
+    
+    /* mobile friendly alternative to using background-attachment: fixed */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      background: var(--color-darkblue);
+      background-image: linear-gradient(
+          115deg,
+          rgba(26, 136, 187, 0.8),
+          rgba(136, 136, 206, 0.7)
+        ),
+        url(file:///D:/weather.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #F5F5F5;
+    }
+    
+    .weather-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    
+    .weather-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #FFFFFF;
+      border-radius: 10px;
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    
+    #temperature {
+      font-size: 50px;
+      margin: 0;
+    }
+    
+    #condition {
+      font-size: 20px;
+      margin: 0;
+    }
+    
+    #location {
+      font-size: 20px;
+      margin: 0;
+    }
+    
+    input[type="text"] {
+      padding: 10px;
+      margin-right: 10px;
+      border-radius: 5px;
+      border: none;
+    }
+    
+    button {
+      padding: 10px 20px;
+      border-radius: 5px;
+      border: none;
+      background-color: #2980B9;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+  
+    
+    
+    
+    
+   
+   
